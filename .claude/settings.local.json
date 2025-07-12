@@ -4,7 +4,8 @@
       "Bash(ls:*)",
       "Bash(npm run build:client:*)",
       "Bash(npm run check:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }
