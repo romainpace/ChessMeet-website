@@ -1,0 +1,240 @@
+# Product Requirements Document : Landing Page ChessMeet
+
+## 1. Vue d'ensemble
+
+### 1.1 Objectif
+Créer une landing page moderne et épurée pour présenter l'application mobile ChessMeet, permettant aux visiteurs de découvrir l'application et de la télécharger facilement depuis l'App Store ou Google Play.
+
+### 1.2 Public cible
+- Joueurs d'échecs de tous niveaux en France
+- Personnes cherchant à rencontrer d'autres joueurs IRL
+- Âge : 15-40 ans, urbains, technophiles
+
+### 1.3 Principes de design
+- **Simplicité** : Interface épurée et navigation intuitive
+- **Cohérence** : Reprendre la charte graphique marron/beige de l'application
+- **Mobile-first** : Optimisé pour consultation mobile
+- **Performance** : Chargement rapide et animations fluides
+
+## 2. Structure de la Landing Page
+
+### 2.1 Header (Navigation fixe)
+- **Logo ChessMeet** (à gauche)
+- **Menu de navigation** (à droite) :
+  - Confidentialité
+  - Conditions d'utilisation
+  - Support
+- Design : Fond beige clair (#F5E6D3) avec textes marron foncé (#5D4037)
+
+### 2.2 Section Hero (Accueil)
+**Contenu :**
+- **Titre principal** : "ChessMeet - Rencontrez des joueurs d'échecs près de chez vous"
+- **Sous-titre** : "L'application qui connecte la communauté des échecs en France pour des parties IRL"
+- **Boutons CTA principaux** :
+  - Télécharger sur l'App Store
+  - Disponible sur Google Play
+- **Image hero** : Mockup de l'application sur smartphone
+
+**Design :**
+- Fond avec dégradé subtil beige vers brun clair
+- Typographie moderne et lisible
+- Boutons avec icônes officielles des stores
+
+### 2.3 Section Fonctionnalités (6 points clés)
+
+#### Grille 2x3 avec icônes et descriptions :
+
+1. **🗺️ Carte interactive**
+   - "Découvrez les événements, tournois et lieux de jeu à proximité"
+   - Icône : Marqueur de carte
+
+2. **🎯 Événements communautaires**
+   - "Créez ou rejoignez des parties amicales, tournois et cours"
+   - Icône : Calendrier
+
+3. **💬 Chat intégré**
+   - "Échangez avec les participants et organisez vos rencontres"
+   - Icône : Bulle de discussion
+
+4. **🏆 Annuaire des tournois**
+   - "Consultez tous les tournois officiels FFE et amicaux"
+   - Icône : Trophée
+
+5. **☕ Lieux de jeu**
+   - "Trouvez cafés, clubs et parcs où jouer aux échecs"
+   - Icône : Lieu/Pin
+
+6. **👥 Communauté**
+   - "Rencontrez des joueurs de votre niveau près de chez vous"
+   - Icône : Groupe de personnes
+
+**Design :**
+- Cards avec ombres légères
+- Icônes colorées reprenant la palette de l'app
+- Animations subtiles au survol/scroll
+
+### 2.4 Section Screenshots
+
+**Titre** : "Découvrez l'application en images"
+
+**Carousel/Slider avec 5-6 écrans clés :**
+1. Écran d'accueil avec événements à proximité
+2. Carte interactive avec marqueurs
+3. Détails d'un événement avec participants
+4. Chat de groupe d'un événement
+5. Profil utilisateur
+6. Création d'événement
+
+**Design :**
+- Mockups iPhone/Android avec ombres
+- Navigation par points ou flèches
+- Légendes descriptives sous chaque écran
+
+### 2.5 Section Téléchargement (Footer CTA)
+
+**Contenu :**
+- **Titre** : "Prêt à rejoindre la communauté ?"
+- **Sous-titre** : "Téléchargez gratuitement ChessMeet"
+- **Boutons de téléchargement** (répétition des CTA principaux)
+- **QR Code** (optionnel) pour téléchargement direct
+
+### 2.6 Footer
+
+**Contenu :**
+- Logo ChessMeet
+- Copyright © 2025 ChessMeet
+- Liens rapides : Confidentialité | CGU | Support
+- Réseaux sociaux (si applicable)
+
+## 3. Pages secondaires
+
+### 3.1 Page Confidentialité (`/confidentialite`)
+- Politique de confidentialité complète
+- Navigation retour vers la page principale
+- Design cohérent avec header/footer
+
+### 3.2 Page Conditions d'utilisation (`/cgu`)
+- CGU complètes (reprendre le contenu de l'app)
+- Navigation retour vers la page principale
+- Design cohérent avec header/footer
+
+### 3.3 Page Support (`/support`)
+**Contenu :**
+- Titre : "Besoin d'aide ?"
+- Email de contact : support@chessmeet.fr
+- FAQ basique (optionnel)
+- Formulaire de contact (optionnel)
+
+## 4. Spécifications techniques
+
+### 4.1 Technologies recommandées
+- **Framework** : Next.js ou Gatsby (pour SEO et performance)
+- **Styling** : Tailwind CSS ou CSS Modules
+- **Animations** : Framer Motion ou CSS animations
+- **Hébergement** : Vercel, Netlify ou GitHub Pages
+
+### 4.2 Responsive Design
+- Mobile : 320px - 768px
+- Tablet : 768px - 1024px
+- Desktop : 1024px+
+
+### 4.3 Performance
+- Score Lighthouse > 90
+- Images optimisées (WebP avec fallback)
+- Lazy loading pour les screenshots
+- Minification CSS/JS
+
+### 4.4 SEO
+- Meta tags optimisés
+- Schema.org pour application mobile
+- Sitemap XML
+- Robots.txt
+
+## 5. Charte graphique
+
+### 5.1 Couleurs (reprises de l'app)
+- **Primaire** : Beige clair (#F5E6D3)
+- **Secondaire** : Marron foncé (#5D4037)
+- **Accent** : Brun doré (#D4A574)
+- **Textes** : Marron foncé (#5D4037) sur fond clair
+- **Backgrounds** : Variations de beige (#E8D5B7, #F0E6D6)
+
+### 5.2 Typographie
+- **Titres** : Font sans-serif moderne (ex: Inter, Poppins)
+- **Corps** : Font lisible (ex: Inter, Open Sans)
+- **Tailles** : Hiérarchie claire (H1: 48px, H2: 36px, etc.)
+
+### 5.3 Iconographie
+- Style : Ligne simple, moderne
+- Source : Font Awesome, Heroicons ou custom
+- Couleurs : Cohérentes avec la palette
+
+## 6. Contenus textuels
+
+### 6.1 Copywriting
+- Ton : Amical, accessible, enthousiaste
+- Langue : Français
+- Messages clés : Communauté, proximité, simplicité
+
+### 6.2 Exemples de textes
+
+**Hero section :**
+```
+Titre : "ChessMeet - Rencontrez des joueurs d'échecs près de chez vous"
+Sous-titre : "L'application qui connecte la communauté des échecs en France pour des parties IRL"
+```
+
+**Section fonctionnalités :**
+```
+"Fini les parties en ligne anonymes ! ChessMeet vous permet de rencontrer 
+de vrais joueurs dans votre ville, de participer à des événements locaux 
+et de découvrir les meilleurs endroits pour jouer."
+```
+
+## 7. Liens et intégrations
+
+### 7.1 Boutons de téléchargement
+- **App Store** : https://apps.apple.com/app/chessmeet/[ID_APP]
+- **Google Play** : https://play.google.com/store/apps/details?id=com.chessngo.app
+
+### 7.2 Analytics
+- Google Analytics 4
+- Tracking des clics sur les boutons de téléchargement
+- Heatmaps (optionnel : Hotjar)
+
+## 8. Critères de succès
+
+- Taux de conversion visiteur → téléchargement > 10%
+- Temps de chargement < 3 secondes
+- Taux de rebond < 50%
+- Score SEO optimal
+
+## 9. Planning de développement
+
+### Phase 1 : Design (1 semaine)
+- Maquettes desktop/mobile
+- Validation de la charte graphique
+- Préparation des assets
+
+### Phase 2 : Développement (2 semaines)
+- Setup technique
+- Intégration des sections
+- Responsive design
+- Tests cross-browser
+
+### Phase 3 : Finalisation (3 jours)
+- Optimisations performance
+- SEO
+- Tests finaux
+- Déploiement
+
+## 10. Maintenance
+
+- Mise à jour des screenshots selon évolutions de l'app
+- Ajout de témoignages utilisateurs (futur)
+- Blog ou actualités (futur)
+- Support multilingue (futur)
+
+---
+
+Cette landing page servira de vitrine professionnelle pour ChessMeet, en mettant en avant ses fonctionnalités uniques tout en restant simple et accessible. Le design marron/beige créera une cohérence visuelle avec l'application mobile, renforçant l'identité de marque.
