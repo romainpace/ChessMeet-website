@@ -15,28 +15,28 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50" role="banner">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Navigation principale">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 xs:h-20">
           <Link href="/" className="flex items-center space-x-3">
-            <img src={chessLogo} alt="ChessMeet Logo" className="h-12 w-12 md:h-14 md:w-14" />
-            <img src={chessmeetText} alt="ChessMeet" className="h-34 md:h-36" />
+            <img src={chessLogo} alt="ChessMeet Logo" className="h-10 w-10 xs:h-12 xs:w-12 md:h-14 md:w-14" />
+            <img src={chessmeetText} alt="ChessMeet" className="h-28 xs:h-32 sm:h-34 md:h-36" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8" role="navigation">
             <Link
               href="/confidentialite"
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
+              className="text-gray-700 hover:text-primary font-medium transition-colors text-sm lg:text-base"
             >
               Confidentialité
             </Link>
             <Link
               href="/cgu"
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
+              className="text-gray-700 hover:text-primary font-medium transition-colors text-sm lg:text-base"
             >
               Conditions d'utilisation
             </Link>
             <Link
               href="/support"
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
+              className="text-gray-700 hover:text-primary font-medium transition-colors text-sm lg:text-base"
             >
               Support
             </Link>
@@ -65,21 +65,21 @@ export default function Header() {
           >
             <Link
               href="/confidentialite"
-              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors"
+              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Confidentialité
             </Link>
             <Link
               href="/cgu"
-              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors"
+              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Conditions d'utilisation
             </Link>
             <Link
               href="/support"
-              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors"
+              className="block py-3 text-gray-700 hover:text-primary font-medium transition-colors text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Support
