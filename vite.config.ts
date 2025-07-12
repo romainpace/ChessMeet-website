@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-import fs from "fs";
 
 export default defineConfig({
   plugins: [
@@ -11,30 +10,6 @@ export default defineConfig({
     ...(process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined
       ? [await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer())]
       : []),
-    // Plugin pour copier les assets depuis attached_assets
-    {
-      name: "copy-assets",
-      generateBundle() {
-        const assetsDir = path.resolve(import.meta.dirname, "attached_assets");
-        const publicDir = path.resolve(import.meta.dirname, "client", "public");
-        
-        if (fs.existsSync(assetsDir)) {
-          const files = fs.readdirSync(assetsDir);
-          files.forEach(file => {
-            if (file.match(/\.(png|jpg|jpeg|webp|svg)$/)) {
-              try {
-                fs.copyFileSync(
-                  path.join(assetsDir, file),
-                  path.join(publicDir, file)
-                );
-              } catch (err) {
-                console.warn(`Failed to copy ${file}:`, err);
-              }
-            }
-          });
-        }
-      }
-    }
   ],
   resolve: {
     alias: {

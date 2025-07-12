@@ -1,0 +1,30 @@
+# Development files
+node_modules/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build files (except dist/public)
+dist/
+!dist/public/
+
+# Source files (not needed in production)
+server/
+client/src/
+attached_assets/
+scripts/
+
+# Config files
+*.config.ts
+*.config.js
+tsconfig.json
+vitest.config.ts
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+**/*.test.*
+**/__tests__/ 
