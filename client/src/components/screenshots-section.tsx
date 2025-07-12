@@ -1,25 +1,30 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import captureAccueil from "@assets/capture-accueil.jpg";
+import captureMap from "@assets/capture-map.jpg";
+import captureDetailEvent from "@assets/capture-detail-event.jpg";
+import captureChat from "@assets/capture-chat.jpg";
+import captureAmis from "@assets/capture-amis.jpg";
 
 const screenshots = [
   {
-    url: "/images/capture-accueil",
+    image: captureAccueil,
     title: "Découvre les parties et tournois à venir dans ta ville",
   },
   {
-    url: "/images/capture-map",
+    image: captureMap,
     title: "Visualise tous les spots d'échecs autour de toi",
   },
   {
-    url: "/images/capture-detail-event",
+    image: captureDetailEvent,
     title: "Rejoins des parties en un clic et rencontre de nouveaux adversaires",
   },
   {
-    url: "/images/capture-chat",
+    image: captureChat,
     title: "Discute stratégie et organise tes parties avec la communauté",
   },
   {
-    url: "/images/capture-amis",
+    image: captureAmis,
     title: "Construis ton cercle d'échecs et défie tes amis",
   },
 ];
@@ -98,16 +103,12 @@ export default function ScreenshotsSection() {
                       {/* Phone Screen */}
                       <div className="w-full h-full bg-gray-900 rounded-[2rem] overflow-hidden relative">
                         {/* Screenshot Image */}
-                        <picture>
-                          <source srcSet={`${screenshot.url}.webp`} type="image/webp" />
-                          <source srcSet={`${screenshot.url}-optimized.jpg`} type="image/jpeg" />
-                          <img
-                            src={`${screenshot.url}.jpg`}
-                            alt={screenshot.title}
-                            className="w-full h-full object-cover object-center rounded-[1.8rem]"
-                            loading={index === 0 ? "eager" : "lazy"}
-                          />
-                        </picture>
+                        <img
+                          src={screenshot.image}
+                          alt={screenshot.title}
+                          className="w-full h-full object-cover object-center rounded-[1.8rem]"
+                          loading={index === 0 ? "eager" : "lazy"}
+                        />
 
                         {/* Subtle Glass Effect */}
                         <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/3 pointer-events-none rounded-[1.8rem]"></div>
