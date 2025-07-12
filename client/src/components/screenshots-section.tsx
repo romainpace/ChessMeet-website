@@ -1,52 +1,25 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  captureAccueil,
-  captureMap,
-  captureDetailEvent,
-  captureChat,
-  captureAmis,
-  captureAccueilWebp,
-  captureMapWebp,
-  captureDetailEventWebp,
-  captureChatWebp,
-  captureAmisWebp,
-  captureAccueilOptimized,
-  captureMapOptimized,
-  captureDetailEventOptimized,
-  captureChatOptimized,
-  captureAmisOptimized
-} from "@/assets/images";
 
 const screenshots = [
   {
-    jpg: captureAccueil,
-    webp: captureAccueilWebp,
-    optimized: captureAccueilOptimized,
+    url: "/images/capture-accueil",
     title: "Découvre les parties et tournois à venir dans ta ville",
   },
   {
-    jpg: captureMap,
-    webp: captureMapWebp,
-    optimized: captureMapOptimized,
+    url: "/images/capture-map",
     title: "Visualise tous les spots d'échecs autour de toi",
   },
   {
-    jpg: captureDetailEvent,
-    webp: captureDetailEventWebp,
-    optimized: captureDetailEventOptimized,
+    url: "/images/capture-detail-event",
     title: "Rejoins des parties en un clic et rencontre de nouveaux adversaires",
   },
   {
-    jpg: captureChat,
-    webp: captureChatWebp,
-    optimized: captureChatOptimized,
+    url: "/images/capture-chat",
     title: "Discute stratégie et organise tes parties avec la communauté",
   },
   {
-    jpg: captureAmis,
-    webp: captureAmisWebp,
-    optimized: captureAmisOptimized,
+    url: "/images/capture-amis",
     title: "Construis ton cercle d'échecs et défie tes amis",
   },
 ];
@@ -126,10 +99,10 @@ export default function ScreenshotsSection() {
                       <div className="w-full h-full bg-gray-900 rounded-[2rem] overflow-hidden relative">
                         {/* Screenshot Image */}
                         <picture>
-                          <source srcSet={screenshot.webp} type="image/webp" />
-                          <source srcSet={screenshot.optimized} type="image/jpeg" />
+                          <source srcSet={`${screenshot.url}.webp`} type="image/webp" />
+                          <source srcSet={`${screenshot.url}-optimized.jpg`} type="image/jpeg" />
                           <img
-                            src={screenshot.jpg}
+                            src={`${screenshot.url}.jpg`}
                             alt={screenshot.title}
                             className="w-full h-full object-cover object-center rounded-[1.8rem]"
                             loading={index === 0 ? "eager" : "lazy"}

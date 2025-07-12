@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { chessLogo, chessmeetText } from "@/assets/images";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,8 +15,8 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Navigation principale">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-3">
-            <img src={chessLogo} alt="ChessMeet Logo" className="h-12 w-12 md:h-14 md:w-14" />
-            <img src={chessmeetText} alt="ChessMeet" className="h-34 md:h-36" />
+            <img src="/chess-logo.png" alt="ChessMeet Logo" className="h-12 w-12 md:h-14 md:w-14" />
+            <img src="/chessmeet-text.png" alt="ChessMeet" className="h-34 md:h-36" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8" role="navigation">

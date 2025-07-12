@@ -2,10 +2,11 @@
   "buildCommand": "npm run build:client",
   "outputDirectory": "dist/public",
   "installCommand": "npm install",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/[^.]+",
+      "dest": "/",
+      "status": 200
     }
   ]
 }
