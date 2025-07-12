@@ -41,6 +41,9 @@ export default defineConfig({
     cssCodeSplit: true,
     sourcemap: false,
     chunkSizeWarningLimit: 1000,
+    // Optimisation pour le déploiement statique
+    assetsDir: "assets",
+    copyPublicDir: true,
   },
   server: {
     fs: {
