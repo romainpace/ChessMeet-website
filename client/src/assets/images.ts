@@ -1,24 +1,44 @@
 // Logos
-export { default as chessLogo } from '/chess-logo.png';
-export { default as chessmeetText } from '/chessmeet-text.png';
+import chessLogo from '../../public/chess-logo.png';
+import chessmeetText from '../../public/chessmeet-text.png';
 
 // Screenshots
-export { default as captureAccueil } from '/images/capture-accueil.jpg';
-export { default as captureMap } from '/images/capture-map.jpg';
-export { default as captureDetailEvent } from '/images/capture-detail-event.jpg';
-export { default as captureChat } from '/images/capture-chat.jpg';
-export { default as captureAmis } from '/images/capture-amis.jpg';
+import captureAccueil from '../../public/images/capture-accueil.jpg';
+import captureMap from '../../public/images/capture-map.jpg';
+import captureDetailEvent from '../../public/images/capture-detail-event.jpg';
+import captureChat from '../../public/images/capture-chat.jpg';
+import captureAmis from '../../public/images/capture-amis.jpg';
 
 // WebP versions
-export { default as captureAccueilWebp } from '/images/capture-accueil.webp';
-export { default as captureMapWebp } from '/images/capture-map.webp';
-export { default as captureDetailEventWebp } from '/images/capture-detail-event.webp';
-export { default as captureChatWebp } from '/images/capture-chat.webp';
-export { default as captureAmisWebp } from '/images/capture-amis.webp';
+import captureAccueilWebp from '../../public/images/capture-accueil.webp';
+import captureMapWebp from '../../public/images/capture-map.webp';
+import captureDetailEventWebp from '../../public/images/capture-detail-event.webp';
+import captureChatWebp from '../../public/images/capture-chat.webp';
+import captureAmisWebp from '../../public/images/capture-amis.webp';
 
 // Optimized JPG versions
-export { default as captureAccueilOptimized } from '/images/capture-accueil-optimized.jpg';
-export { default as captureMapOptimized } from '/images/capture-map-optimized.jpg';
-export { default as captureDetailEventOptimized } from '/images/capture-detail-event-optimized.jpg';
-export { default as captureChatOptimized } from '/images/capture-chat-optimized.jpg';
-export { default as captureAmisOptimized } from '/images/capture-amis-optimized.jpg';
+import captureAccueilOptimized from '../../public/images/capture-accueil-optimized.jpg';
+import captureMapOptimized from '../../public/images/capture-map-optimized.jpg';
+import captureDetailEventOptimized from '../../public/images/capture-detail-event-optimized.jpg';
+import captureChatOptimized from '../../public/images/capture-chat-optimized.jpg';
+import captureAmisOptimized from '../../public/images/capture-amis-optimized.jpg';
+
+export {
+  chessLogo,
+  chessmeetText,
+  captureAccueil,
+  captureMap,
+  captureDetailEvent,
+  captureChat,
+  captureAmis,
+  captureAccueilWebp,
+  captureMapWebp,
+  captureDetailEventWebp,
+  captureChatWebp,
+  captureAmisWebp,
+  captureAccueilOptimized,
+  captureMapOptimized,
+  captureDetailEventOptimized,
+  captureChatOptimized,
+  captureAmisOptimized
+};
