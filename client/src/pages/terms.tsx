@@ -24,7 +24,10 @@ export default function Terms() {
                   <section>
                     <h2 className="text-2xl font-semibold text-foreground mb-4">1. Acceptation</h2>
                     <p className="text-foreground/70 mb-4">
-                      En utilisant ChessMeet, vous acceptez ces conditions. Si vous avez des questions ou des réserves, n'hésitez pas à nous contacter avant de commencer.
+                      En utilisant ChessMeet, vous acceptez ces conditions. 
+                      <br />
+                    
+                      Si vous avez des questions ou des réserves, n'hésitez pas à nous contacter avant de commencer.
                     </p>
                   </section>
 
