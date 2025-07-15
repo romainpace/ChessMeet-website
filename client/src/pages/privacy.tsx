@@ -48,23 +48,21 @@ export default function Privacy() {
                     <h2 className="text-2xl font-semibold text-foreground mb-4">
                       2. Données collectées
                     </h2>
-                    <p className="text-foreground/70 mb-4">Nous collectons :</p>
+                    <p className="text-foreground/70 mb-4">
+                      Nous collectons les données nécessaires au fonctionnement du service :
+                    </p>
                     <ul className="list-disc list-inside text-foreground/70 space-y-2 mb-4">
                       <li>
-                        <strong>Données de compte</strong> : email, pseudo, mot de passe (chiffré)
+                        <strong>Informations de compte et profil</strong> pour vous identifier et vous connecter avec d'autres joueurs
                       </li>
                       <li>
-                        <strong>Profil</strong> : ville, niveau d'échecs, photo (optionnelle)
+                        <strong>Localisation</strong> (avec votre permission) pour afficher les événements près de vous
                       </li>
                       <li>
-                        <strong>Localisation</strong> : pour afficher les événements proches (avec
-                        permission)
+                        <strong>Messages et interactions</strong> dans l'application
                       </li>
                       <li>
-                        <strong>Messages</strong> : échangés dans les chats d'événements
-                      </li>
-                      <li>
-                        <strong>Données techniques</strong> : type d'appareil, version app
+                        <strong>Données techniques</strong> pour assurer le bon fonctionnement du service
                       </li>
                     </ul>
                   </section>
@@ -86,20 +84,8 @@ export default function Privacy() {
                       4. Partage des données
                     </h2>
                     <p className="text-foreground/70 mb-4">
-                      Nous ne vendons jamais vos données. Nous les partageons uniquement avec :
+                      Nous ne vendons jamais vos données. Nous les partageons uniquement avec d'autres utilisateurs (votre profil public), nos prestataires techniques pour l'hébergement, et les autorités si la loi l'exige.
                     </p>
-                    <ul className="list-disc list-inside text-foreground/70 space-y-2 mb-4">
-                      <li>
-                        <strong>Autres utilisateurs</strong> : votre profil public (pseudo, ville,
-                        niveau)
-                      </li>
-                      <li>
-                        <strong>Nos prestataires techniques</strong> : Supabase (hébergement)
-                      </li>
-                      <li>
-                        <strong>Autorités</strong> : si la loi l'exige
-                      </li>
-                    </ul>
                   </section>
 
                   <section>

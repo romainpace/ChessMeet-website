@@ -9,13 +9,12 @@ Email : contact@chessmeet.fr
 
 ## 2. Données collectées
 
-Nous collectons :
+Nous collectons les données nécessaires au fonctionnement du service :
 
-- **Données de compte** : email, pseudo, mot de passe (chiffré)
-- **Profil** : ville, niveau d'échecs, photo (optionnelle)
-- **Localisation** : pour afficher les événements proches (avec permission)
-- **Messages** : échangés dans les chats d'événements
-- **Données techniques** : type d'appareil, version app
+- **Informations de compte et profil** pour vous identifier et vous connecter avec d'autres joueurs
+- **Localisation** (avec votre permission) pour afficher les événements près de vous  
+- **Messages et interactions** dans l'application
+- **Données techniques** pour assurer le bon fonctionnement du service
 
 ## 3. Pourquoi nous collectons vos données
 

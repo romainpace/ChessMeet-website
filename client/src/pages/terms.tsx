@@ -24,8 +24,7 @@ export default function Terms() {
                   <section>
                     <h2 className="text-2xl font-semibold text-foreground mb-4">1. Acceptation</h2>
                     <p className="text-foreground/70 mb-4">
-                      En utilisant ChessMeet, vous acceptez ces conditions. Si vous n'êtes pas
-                      d'accord, n'utilisez pas l'application.
+                      En utilisant ChessMeet, vous acceptez ces conditions. Si vous avez des questions ou des réserves, n'hésitez pas à nous contacter avant de commencer.
                     </p>
                   </section>
 
@@ -49,7 +48,7 @@ export default function Terms() {
                       <li>Être respectueux envers les autres utilisateurs</li>
                       <li>Ne pas publier de contenu illégal ou offensant</li>
                       <li>Respecter les droits d'auteur</li>
-                      <li>Avoir au moins 13 ans</li>
+                      <li>Avoir au moins 15 ans</li>
                     </ul>
                   </section>
 

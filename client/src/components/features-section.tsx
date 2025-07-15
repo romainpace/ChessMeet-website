@@ -31,7 +31,7 @@ const features = [
   {
     icon: Users,
     title: "Communauté",
-    description: "Trouvez votre tribu : des adversaires à votre niveau, des amis pour progresser",
+    description: "Trouvez des adversaires à votre niveau, des amis pour progresser",
   },
 ];
 
