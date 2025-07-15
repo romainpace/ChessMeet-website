@@ -72,7 +72,7 @@ export default function Terms() {
                       5. Votre contenu
                     </h2>
                     <p className="text-foreground/70 mb-4">
-                      Vous restez propriétaire de votre contenu (photos, messages). En le publiant,
+                      Vous restez propriétaire de votre contenu (photos, messages). <br />En le publiant,
                       vous nous autorisez à l'afficher dans l'application.
                     </p>
                   </section>
