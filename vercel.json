@@ -3,14 +3,8 @@
   "outputDirectory": "dist/public",
   "installCommand": "npm install",
   "framework": null,
-  "rewrites": [
-    { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/manifest.json", "destination": "/manifest.json" },
-    { "source": "/favicon-32x32.png", "destination": "/favicon-32x32.png" },
-    { "source": "/favicon-16x16.png", "destination": "/favicon-16x16.png" },
-    { "source": "/apple-touch-icon.png", "destination": "/apple-touch-icon.png" },
-    { "source": "/og-image.jpg", "destination": "/og-image.jpg" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
