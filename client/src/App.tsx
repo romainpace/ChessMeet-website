@@ -11,6 +11,8 @@ import Home from "@/pages/home";
 const Privacy = lazy(() => import("@/pages/privacy"));
 const Terms = lazy(() => import("@/pages/terms"));
 const Support = lazy(() => import("@/pages/support"));
+const About = lazy(() => import("@/pages/about"));
+const Legal = lazy(() => import("@/pages/legal"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 // Loading component
@@ -30,6 +32,8 @@ function Router() {
         <Route path="/confidentialite" component={Privacy} />
         <Route path="/cgu" component={Terms} />
         <Route path="/support" component={Support} />
+        <Route path="/a-propos" component={About} />
+        <Route path="/mentions-legales" component={Legal} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

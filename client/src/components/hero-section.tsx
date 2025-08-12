@@ -105,7 +105,9 @@ export default function HeroSection() {
                   src={screenshotOnboarding}
                   alt="Interface de l'application ChessMeet montrant l'écran d'accueil avec les options de connexion"
                   className="w-full h-full object-cover rounded-[1.8rem] xs:rounded-[2.3rem]"
-                  loading="eager"
+                  width="512"
+                  height="1024"
+                  loading="lazy"
                 />
 
                 {/* Screen Overlay for Realism */}

@@ -3,10 +3,16 @@ import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Mail } from "lucide-react";
+import { SEO } from "@/components/seo";
 
 export default function Support() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Support"
+        description="Besoin d'aide ? Contactez l'équipe ChessMeet pour toute question ou support."
+        url="https://chessmeet.fr/support"
+      />
       <Header />
       <main className="pt-28 pb-16 flex-grow">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

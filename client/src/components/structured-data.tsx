@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 interface StructuredDataProps {
-  type?: "Organization" | "WebApplication" | "FAQPage";
+  type?: "Organization" | "WebApplication" | "FAQPage" | "WebSite";
   data?: any;
 }
 
@@ -23,9 +23,10 @@ export function StructuredData({ type = "Organization", data }: StructuredDataPr
             availableLanguage: "French",
           },
           sameAs: [
-            "https://twitter.com/chessmeet",
-            "https://www.facebook.com/chessmeet",
-            "https://www.instagram.com/chessmeet",
+            "https://x.com/chessmeet_app",
+            "https://www.instagram.com/chessmeet_app/",
+            "https://www.youtube.com/@chessmeet_app",
+            "https://www.tiktok.com/@chessmeet_app"
           ],
         };
 
@@ -53,6 +54,19 @@ export function StructuredData({ type = "Organization", data }: StructuredDataPr
             "https://chessmeet.fr/screenshot2.jpg",
             "https://chessmeet.fr/screenshot3.jpg",
           ],
+        };
+
+      case "WebSite":
+        return {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "ChessMeet",
+          url: "https://chessmeet.fr",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://chessmeet.fr/?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
         };
 
       case "FAQPage":

@@ -19,6 +19,15 @@ export default function Footer() {
 
           <div className="text-center order-3 sm:order-2">
             <p className="text-white/60 text-[10px] xs:text-xs">© 2025 ChessMeet. Tous droits réservés.</p>
+            <div className="mt-2 space-x-3">
+              <Link href="/a-propos" className="text-white/50 hover:text-white text-[10px] xs:text-xs">
+                À propos
+              </Link>
+              <span className="text-white/40">·</span>
+              <Link href="/mentions-legales" className="text-white/50 hover:text-white text-[10px] xs:text-xs">
+                Mentions légales
+              </Link>
+            </div>
           </div>
 
           <div className="flex justify-center sm:justify-end space-x-3 xs:space-x-4 order-2 sm:order-3">
