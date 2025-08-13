@@ -51,12 +51,29 @@ function run() {
     console.log('✓ Created manifest.json');
   }
 
-  // Seed a minimal sitemap.xml (will be regenerated later by build-blog)
+  // Seed sitemap.xml with all static routes so production always has a complete sitemap
   const sitemapPath = path.join(PUBLIC_DIR, 'sitemap.xml');
   if (!fs.existsSync(sitemapPath)) {
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>https://chessmeet.fr/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n</urlset>\n`;
+    const now = new Date().toISOString();
+    const staticUrls = [
+      { loc: '/', changefreq: 'weekly', priority: '1.0' },
+      { loc: '/confidentialite', changefreq: 'monthly', priority: '0.6' },
+      { loc: '/cgu', changefreq: 'monthly', priority: '0.6' },
+      { loc: '/support', changefreq: 'monthly', priority: '0.5' },
+      { loc: '/a-propos', changefreq: 'yearly', priority: '0.4' },
+      { loc: '/mentions-legales', changefreq: 'yearly', priority: '0.4' },
+      // include /blog index if present later; it is harmless to list it early
+      { loc: '/blog', changefreq: 'weekly', priority: '0.6' },
+    ];
+    const entries = staticUrls
+      .map(
+        (u) =>
+          `  <url>\n    <loc>https://chessmeet.fr${u.loc}</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`
+      )
+      .join('\n');
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}\n</urlset>\n`;
     fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
-    console.log('✓ Seeded sitemap.xml');
+    console.log('✓ Seeded sitemap.xml (static routes)');
   }
   // Logo used in Organization schema, general usage
   copyIfExists('chess-knight-logo.png', 'logo.png');
