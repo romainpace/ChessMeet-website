@@ -13,6 +13,8 @@ const Terms = lazy(() => import("@/pages/terms"));
 const Support = lazy(() => import("@/pages/support"));
 const About = lazy(() => import("@/pages/about"));
 const Legal = lazy(() => import("@/pages/legal"));
+const BlogIndex = lazy(() => import("@/pages/blog-index"));
+const BlogPost = lazy(() => import("@/pages/blog-post"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 // Loading component
@@ -34,6 +36,8 @@ function Router() {
         <Route path="/support" component={Support} />
         <Route path="/a-propos" component={About} />
         <Route path="/mentions-legales" component={Legal} />
+        <Route path="/blog" component={BlogIndex} />
+        <Route path="/blog/:slug" component={BlogPost} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
