@@ -58,7 +58,7 @@ function run() {
     fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
     console.log('✓ Seeded sitemap.xml');
   }
-  // Logo used in Organization schema and general usage
+  // Logo used in Organization schema, general usage
   copyIfExists('chess-knight-logo.png', 'logo.png');
 
   // Try to provide an OG image; prefer a landing screenshot if present
